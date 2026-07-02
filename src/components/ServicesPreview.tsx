@@ -6,13 +6,13 @@ import CompoundingLine from './CompoundingLine';
 const PREVIEW_SERVICES = [
   {
     title: 'Equities',
-    image: 'public/images/ServicePreviewEquities.jpeg',
+    image: '/images/ServicePreviewEquities.jpeg',
     description:
       'Bespoke direct stock portfolios structured for long-term compound growth based on stringent intrinsic-value calculations.',
   },
   {
     title: 'Mutual Funds',
-    image: 'public/images/ServicePreviewMututalFunds.jpeg',
+    image: '/images/ServicePreviewMututalFunds.jpeg',
     description:
       'Carefully curated selection of high-performing diversified funds aligned with your structural income and growth needs.',
   },

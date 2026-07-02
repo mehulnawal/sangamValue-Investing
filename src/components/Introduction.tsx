@@ -22,7 +22,7 @@ export default function Introduction() {
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden border border-primary/5 shadow-md group">
               <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-all duration-300 z-10" />
               <img
-                src="public/images/philosophicalSection.jpg"
+                src="/images/philosophicalSection.jpg"
                 alt="Sangam Value Investing private wealth office lounge"
                 className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-700"
                 referrerPolicy="no-referrer"

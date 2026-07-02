@@ -44,7 +44,7 @@ export default function Leadership() {
                 <div className="absolute -inset-2 border border-accent/30 rounded-lg -z-10 transform translate-x-1 translate-y-1" />
                 <div className="w-full h-full overflow-hidden rounded-md border border-primary/10">
                   <img
-                    src="public/images/bimal_portrait_1782979355442.jpg"
+                    src="/images/bimal_portrait_1782979355442.jpg"
                     alt="Bimal Dharewa - Partner at Sangam Value Investing"
                     className="w-full h-full object-cover grayscale-[10%]"
                     referrerPolicy="no-referrer"
