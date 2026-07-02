@@ -7,7 +7,7 @@ export default function Leadership() {
   return (
     <section id="leadership" className="py-20 md:py-28 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
           <span className="text-xs font-semibold tracking-widest uppercase text-accent font-sans">
@@ -30,7 +30,7 @@ export default function Leadership() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
-            
+
             {/* Image (Left on md+) */}
             <motion.div
               className="md:col-span-4 relative flex justify-center"
@@ -44,7 +44,7 @@ export default function Leadership() {
                 <div className="absolute -inset-2 border border-accent/30 rounded-lg -z-10 transform translate-x-1 translate-y-1" />
                 <div className="w-full h-full overflow-hidden rounded-md border border-primary/10">
                   <img
-                    src="/src/assets/images/bimal_portrait_1782979355442.jpg"
+                    src="public/images/bimal_portrait_1782979355442.jpg"
                     alt="Bimal Dharewa - Partner at Sangam Value Investing"
                     className="w-full h-full object-cover grayscale-[10%]"
                     referrerPolicy="no-referrer"

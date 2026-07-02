@@ -140,7 +140,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
 
               <div className="w-full h-full overflow-hidden rounded-md border border-primary/10 shadow-[0_15px_40px_rgba(30,77,58,0.08)] bg-card">
                 <img
-                  src="/src/assets/images/ownerPhoto.jpg"
+                  src="public/images/ownerPhoto.jpg"
                   alt="Founder Portrait of Bimal Dharewa"
                   className="w-full h-full object-cover grayscale-[15%] group-hover:grayscale-0 transition-all duration-700"
                   referrerPolicy="no-referrer"
@@ -184,7 +184,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
             {/* Image 1 */}
             <div className="relative overflow-hidden rounded-md border border-primary/10 bg-card aspect-[16/10] w-full shadow-sm hover:shadow-md transition-shadow duration-300">
               <img
-                src="/src/assets/images/heroImg2.jpg"
+                src="public/images/heroImg2.jpg"
                 alt="Bimal Dharewa receiving a bouquet partner greeting"
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.01]"
               />
@@ -193,7 +193,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
             {/* Image 2 */}
             <div className="relative overflow-hidden rounded-md border border-primary/10 bg-card aspect-[16/10] w-full shadow-sm hover:shadow-md transition-shadow duration-300">
               <img
-                src="/src/assets/images/heroImg2.jpeg"
+                src="public/images/heroImg2.jpeg"
                 alt="Handshake agreement collaboration overview"
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.01]"
               />

@@ -55,7 +55,7 @@ export default function Navbar() {
           >
             {/* Logo Image */}
             <img
-              src="/src/assets/images/logo.png"
+              src="public/images/logo.png"
               alt="Sangam Value Investing Logo"
               className="
       w-9 h-9

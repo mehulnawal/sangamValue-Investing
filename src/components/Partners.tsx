@@ -2,7 +2,7 @@ import { motion, useReducedMotion } from 'motion/react';
 
 const PARTNER = {
   name: 'IIFL Securities',
-  logo: '/src/assets/images/IIFLLogo.png',
+  logo: 'public/images/IIFLLogo.png',
   description:
     'We proudly collaborate with IIFL Securities, one of India’s leading financial institutions, enabling our clients to access reliable trading infrastructure, seamless execution, and comprehensive investment solutions backed by decades of market expertise.',
 };

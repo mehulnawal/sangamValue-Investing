@@ -2,17 +2,17 @@ import { motion, useReducedMotion } from 'motion/react';
 
 const GALLERY_PHOTOS = [
   {
-    src: '/src/assets/images/trust1.jpg',
+    src: 'public/images/trust1.jpg',
     alt: 'Sangam Value Investing elegant corporate reception and signage',
     caption: 'Advisory Entrance',
   },
   {
-    src: '/src/assets/images/trust2.jpg',
+    src: 'public/images/trust2.jpg',
     alt: 'Boutique wealth management office suite interior lounge',
     caption: 'Private Discussion Suite',
   },
   {
-    src: '/src/assets/images/trust3.jpg',
+    src: 'public/images/trust3.jpg',
     alt: 'Elegant corporate inauguration toast at Sangam Value Investing',
     caption: 'Grand Opening Moment',
   },
