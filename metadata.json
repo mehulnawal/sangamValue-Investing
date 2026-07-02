@@ -1,0 +1,6 @@
+{
+  "name": "Sangam Value Investing",
+  "description": "Premium private wealth management advisory services crafting your financial legacy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
