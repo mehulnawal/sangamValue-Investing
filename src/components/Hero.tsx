@@ -170,7 +170,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
               Celebrating Milestones Together
             </h2>
             <p className="font-sans text-sm sm:text-base text-charcoal/70 font-light">
-              Honored to host our esteemed guest Kailash Hakim Sir at the Sangam Value Investing office inauguration. Building a legacy of trust, collaboration, and shared financial milestones from day one.
+              Honored to host our esteemed guest <strong>Kailash Hakim Sir </strong> at the Sangam Value Investing office inauguration. Building a legacy of trust, collaboration, and shared financial milestones from day one.
             </p>
           </motion.div>
 
