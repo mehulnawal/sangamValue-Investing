@@ -49,26 +49,27 @@ export default function ServicesPreview() {
   return (
     <section
       id="services-preview"
-      className="py-20 md:py-28 bg-background relative"
+      className="py-2 md:py-2 bg-background relative"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-3">
-
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-0 text-center">
 
-          <div className="max-w-xl">
-            <span className="text-xs font-semibold tracking-widest uppercase text-accent">
+          <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
+            <span className="text-xs font-semibold tracking-widest uppercase text-accent font-sans">
               Expertise
             </span>
 
-            <h2 className="font-serif text-3xl md:text-5xl font-bold text-primary mt-2">
+            <h2 className="font-serif text-3xl md:text-4.5xl font-bold text-primary mt-2 mb-4">
               Our Core Disciplines
             </h2>
 
-            <p className="mt-0 text-charcoal/80 leading-relaxed">
+            <p className="font-sans text-charcoal/80 text-sm md:text-base leading-relaxed max-w-xl mx-auto mt-4 font-light">
               We specialize in structured products and value-first allocations
               designed to withstand volatile market cycles.
             </p>
+
+            <div className="w-16 h-0.5 bg-accent mx-auto mt-4" />
           </div>
 
           {/* <Link
