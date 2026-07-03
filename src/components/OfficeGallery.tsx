@@ -41,9 +41,7 @@ export default function OfficeGallery() {
 
         {/* 3-Image Strip Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-
           {GALLERY_PHOTOS.map((photo, index) => (
-
             <motion.div
               key={photo.caption}
               initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 20 }}
@@ -59,7 +57,7 @@ export default function OfficeGallery() {
                 <img
                   src={photo.src}
                   alt={photo.alt}
-                  className={`w-full h-full object-cover grayscale-[12%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 object-bottom`}
+                  className="w-full h-full object-cover object-top grayscale-[12%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                   referrerPolicy="no-referrer"
                 />
               </div>
@@ -69,9 +67,6 @@ export default function OfficeGallery() {
                 <p className="font-serif text-lg font-bold text-primary group-hover:text-accent transition-colors">
                   {photo.caption}
                 </p>
-                {/* <span className="text-[10px] font-sans tracking-widest uppercase text-charcoal/40 group-hover:text-accent/60 transition-colors">
-                  SECURE &amp; ALIGNED
-                </span> */}
               </div>
             </motion.div>
           ))}
