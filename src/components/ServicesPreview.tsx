@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion, useReducedMotion } from 'motion/react';
 import { ArrowRight, ArrowUpRight, Cpu } from 'lucide-react';
 import CompoundingLine from './CompoundingLine';
+import Services from '../pages/Services';
 
 const PREVIEW_SERVICES = [
   {
@@ -50,7 +51,7 @@ export default function ServicesPreview() {
       id="services-preview"
       className="py-20 md:py-28 bg-background relative"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-3">
 
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
@@ -64,25 +65,25 @@ export default function ServicesPreview() {
               Our Core Disciplines
             </h2>
 
-            <p className="mt-4 text-charcoal/80 leading-relaxed">
+            <p className="mt-0 text-charcoal/80 leading-relaxed">
               We specialize in structured products and value-first allocations
               designed to withstand volatile market cycles.
             </p>
           </div>
 
-          <Link
+          {/* <Link
             to="/services"
             className="inline-flex items-center gap-2 border border-primary text-primary hover:bg-primary hover:text-background px-6 py-3 rounded-md text-xs font-bold tracking-wider uppercase transition-all duration-300 group"
           >
             View All Services
 
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </Link>
+          </Link> */}
         </div>
 
         {/* Services */}
-        <section className="py-12 md:py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-12 md:py-16 !pt-0">
+          <div className="">
             <div className="bg-card border border-accent/20 rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(30,77,58,0.04)] grid grid-cols-1 lg:grid-cols-12 gap-0 items-stretch group">
 
               {/* Spotlight Creative Image Visual - Dom element swapped to load first on mobile */}
@@ -123,6 +124,8 @@ export default function ServicesPreview() {
             </div>
           </div>
         </section>
+
+        <Services />
 
         {/* Divider */}
 

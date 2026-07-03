@@ -25,10 +25,10 @@ const SERVICES_DATA = [
     image: '/images/services/Equities.jpeg',
   },
   {
-    icon: Compass,
-    title: 'Investment Advisory',
-    description: 'Highly customized capital allocation strategies designed to navigate cyclical market swings with strategic patience.',
-    image: '/images/services/InvestmentAdvisory.jpeg',
+    icon: Coins,
+    title: 'Mutual Funds',
+    description: 'Diversified institutional mutual fund selection utilizing extensive quantitative screening models.',
+    image: '/images/services/MututalFunds.jpeg',
   },
   {
     icon: Briefcase,
@@ -37,28 +37,16 @@ const SERVICES_DATA = [
     image: '/images/services/pms.jpeg',
   },
   {
-    icon: Coins,
-    title: 'Mutual Funds',
-    description: 'Diversified institutional mutual fund selection utilizing extensive quantitative screening models.',
-    image: '/images/services/MututalFunds.jpeg',
-  },
-  {
     icon: Layers,
     title: 'AIF (Alternative Investment Funds)',
     description: 'Bespoke access to private equity, venture capital, and structured high-yield debt for accredited HNWIs.',
     image: '/images/services/aif.jpeg',
   },
   {
-    icon: Shield,
-    title: 'Life Insurance',
-    description: 'Tax-optimized wealth preservation and estate planning term wrappers ensuring smooth multi-generational legacy transfers.',
-    image: '/images/services/lifeInsurance.jpeg',
-  },
-  {
-    icon: Heart,
-    title: 'Health Insurance',
-    description: 'Premium healthcare shields safeguarding family capital from medical contingencies with top-tier coverage.',
-    image: '/images/services/healthInsurance.jpeg',
+    icon: Compass,
+    title: 'Investment Advisory',
+    description: 'Highly customized capital allocation strategies designed to navigate cyclical market swings with strategic patience.',
+    image: '/images/services/InvestmentAdvisory.jpeg',
   },
   {
     icon: FileText,
@@ -71,6 +59,18 @@ const SERVICES_DATA = [
     title: 'Corporate FDs',
     description: 'Secure corporate fixed deposits offering stable cash flow profiles audited strictly for underlying credit quality.',
     image: '/images/services/corporateFD.jpeg',
+  },
+  {
+    icon: Shield,
+    title: 'Life Insurance',
+    description: 'Tax-optimized wealth preservation and estate planning term wrappers ensuring smooth multi-generational legacy transfers.',
+    image: '/images/services/lifeInsurance.jpeg',
+  },
+  {
+    icon: Heart,
+    title: 'Health Insurance',
+    description: 'Premium healthcare shields safeguarding family capital from medical contingencies with top-tier coverage.',
+    image: '/images/services/healthInsurance.jpeg',
   },
 ];
 
@@ -98,11 +98,11 @@ export default function Services() {
   };
 
   return (
-    <div id="services-page-container" className="pt-32 pb-16 bg-background overflow-hidden">
+    <div id="services-page-container" className="pt-0 pb-2 bg-background overflow-hidden">
 
       {/* 1. Header Hero section */}
-      <section className="relative py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* <section className="relative py-12 md:py-16"> */}
+      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-xs font-semibold tracking-widest uppercase text-accent font-sans">
               Our Capabilities
@@ -116,16 +116,15 @@ export default function Services() {
             </p>
           </div>
 
-          {/* Golden compounding line */}
           <div className="w-full h-16 pt-2 overflow-visible">
             <CompoundingLine variant="services-header" />
           </div>
-        </div>
-      </section>
+        </div> */}
+      {/* </section> */}
 
       {/* 3. Services Grid */}
-      <section className="py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="pt-0 pb-0">
+        <div className="">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {SERVICES_DATA.map((service, index) => (
               <ServiceCard

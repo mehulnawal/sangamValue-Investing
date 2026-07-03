@@ -70,7 +70,7 @@ export default function Navbar() {
             />
 
             <div className="flex items-center whitespace-nowrap overflow-hidden w-full select-none">
-              <span className="font-serif font-bold text-primary leading-none tracking-wide text-[4.7vw] sm:text-lg md:text-xl lg:text-2xl">
+              <span className="font-serif font-bold text-primary leading-none tracking-tight text-[6vw] xs:text-[6.5vw] sm:text-lg md:text-xl lg:text-2xl block w-full text-center sm:text-left break-words">
                 SANGAM VALUE INVESTING
               </span>
             </div>
@@ -87,7 +87,8 @@ export default function Navbar() {
             >
               Home
             </NavLink>
-            <NavLink
+
+            {/* <NavLink
               to="/services"
               className={({ isActive }) =>
                 `font-sans text-sm font-medium tracking-wider uppercase transition-colors duration-200 hover:text-accent focus-visible:ring-2 focus-visible:ring-accent rounded-sm px-1 ${isActive ? 'text-accent' : 'text-primary'
@@ -95,7 +96,7 @@ export default function Navbar() {
               }
             >
               Services
-            </NavLink>
+            </NavLink> */}
 
             {/* <a
               href="#contact"
@@ -114,7 +115,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="flex md:hidden">
+          {/* <div className="flex md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
@@ -125,7 +126,7 @@ export default function Navbar() {
               <span className="sr-only">Open main menu</span>
               {isOpen ? <X className="block h-6 w-6" /> : <Menu className="block h-6 w-6" />}
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -146,7 +147,8 @@ export default function Navbar() {
           >
             Home
           </NavLink>
-          <NavLink
+
+          {/* <NavLink
             to="/services"
             onClick={() => setIsOpen(false)}
             className={({ isActive }) =>
@@ -155,7 +157,8 @@ export default function Navbar() {
             }
           >
             Services
-          </NavLink>
+          </NavLink> */}
+
           {/* <a
             href="#contact"
             onClick={handleContactClick}
