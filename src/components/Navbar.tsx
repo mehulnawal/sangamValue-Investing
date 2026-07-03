@@ -69,17 +69,9 @@ export default function Navbar() {
     "
             />
 
-            <div className="flex items-center whitespace-nowrap overflow-hidden">
-              <span className="font-serif font-bold text-primary
-                   text-sm sm:text-base md:text-lg lg:text-xl
-                   leading-none">
-                SANGAM
-              </span>
-
-              <span className="ml-2 font-sans text-charcoal/70
-                   text-xs sm:text-sm md:text-base lg:text-xl
-                   leading-none">
-                VALUE INVESTING
+            <div className="flex items-center whitespace-nowrap overflow-hidden w-full select-none">
+              <span className="font-serif font-bold text-primary leading-none tracking-wide text-[4.7vw] sm:text-lg md:text-xl lg:text-2xl">
+                SANGAM VALUE INVESTING
               </span>
             </div>
           </NavLink>

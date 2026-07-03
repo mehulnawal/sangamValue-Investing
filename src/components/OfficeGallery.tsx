@@ -41,7 +41,9 @@ export default function OfficeGallery() {
 
         {/* 3-Image Strip Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
           {GALLERY_PHOTOS.map((photo, index) => (
+
             <motion.div
               key={photo.caption}
               initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 20 }}
@@ -52,12 +54,13 @@ export default function OfficeGallery() {
               className="group flex flex-col focus-within:ring-2 focus-within:ring-accent rounded-lg p-1"
             >
               {/* Image box */}
-              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg border border-primary/5 shadow-sm bg-background">
+              <div className="relative aspect-[3/4] md:aspect-[4/5] w-full overflow-hidden rounded-lg border border-primary/5 shadow-sm bg-background">
                 <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-all duration-300 z-10" />
                 <img
                   src={photo.src}
                   alt={photo.alt}
-                  className="w-full h-full object-cover grayscale-[12%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                  className={`w-full h-full object-cover grayscale-[12%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ${index === 1 ? 'object-bottom' : 'object-top'
+                    }`}
                   referrerPolicy="no-referrer"
                 />
               </div>
