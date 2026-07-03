@@ -59,7 +59,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
               <CompoundingLine variant="hero" delay={0.4} />
             </div>
 
-            <motion.div
+            {/* <motion.div
               variants={itemVariants}
               className="inline-flex items-center gap-2 bg-primary/5 border border-primary/10 rounded-full px-4 py-1.5 mb-6 md:mb-8"
             >
@@ -67,7 +67,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
               <span className="text-xs font-semibold tracking-widest uppercase text-primary font-sans">
                 Sangam Value Investing
               </span>
-            </motion.div>
+            </motion.div> */}
 
             <motion.h1
               variants={itemVariants}

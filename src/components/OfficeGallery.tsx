@@ -4,7 +4,7 @@ const GALLERY_PHOTOS = [
   {
     src: '/images/trust1.jpg',
     alt: 'Sangam Value Investing elegant corporate reception and signage',
-    caption: 'Advisory Entrance',
+    caption: 'Siddharth Sedani',
   },
   {
     src: '/images/trust2.jpg',
@@ -14,7 +14,7 @@ const GALLERY_PHOTOS = [
   {
     src: '/images/trust3.jpg',
     alt: 'Elegant corporate inauguration toast at Sangam Value Investing',
-    caption: 'Grand Opening Moment',
+    caption: 'Sanjay Sinha',
   },
 ];
 
@@ -59,8 +59,7 @@ export default function OfficeGallery() {
                 <img
                   src={photo.src}
                   alt={photo.alt}
-                  className={`w-full h-full object-cover grayscale-[12%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ${index === 1 ? 'object-bottom' : 'object-top'
-                    }`}
+                  className={`w-full h-full object-cover grayscale-[12%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 object-bottom`}
                   referrerPolicy="no-referrer"
                 />
               </div>
@@ -70,9 +69,9 @@ export default function OfficeGallery() {
                 <p className="font-serif text-lg font-bold text-primary group-hover:text-accent transition-colors">
                   {photo.caption}
                 </p>
-                <span className="text-[10px] font-sans tracking-widest uppercase text-charcoal/40 group-hover:text-accent/60 transition-colors">
+                {/* <span className="text-[10px] font-sans tracking-widest uppercase text-charcoal/40 group-hover:text-accent/60 transition-colors">
                   SECURE &amp; ALIGNED
-                </span>
+                </span> */}
               </div>
             </motion.div>
           ))}
