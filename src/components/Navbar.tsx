@@ -156,13 +156,14 @@ export default function Navbar() {
           >
             Services
           </NavLink>
-          <a
+          {/* <a
             href="#contact"
             onClick={handleContactClick}
             className="block font-sans text-sm font-semibold tracking-wider uppercase px-3 py-2 text-primary hover:text-accent hover:bg-primary/5 rounded-md"
           >
             Contact
-          </a>
+          </a> */}
+
           <div className="pt-2 px-3">
             <button
               onClick={handleContactClick}

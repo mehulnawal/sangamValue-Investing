@@ -102,24 +102,48 @@ export default function Services() {
     <div id="services-page-container" className="pt-32 pb-16 bg-background overflow-hidden">
 
       {/* 1. Header Hero section */}
-      <section className="relative py-12 md:py-16">
+      <section className="py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <span className="text-xs font-semibold tracking-widest uppercase text-accent font-sans">
-              Our Capabilities
-            </span>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-primary mt-2 mb-6 leading-tight">
-              A Complete Wealth <br />
-              <span className="text-accent italic font-normal">Management Solution</span>
-            </h1>
-            <p className="font-sans text-charcoal/80 text-base sm:text-lg md:text-xl leading-relaxed font-light mb-8">
-              No product is chosen in isolation. We coordinate across specialized wealth structures to build an integrated profile tailored purely to your family goals.
-            </p>
-          </div>
+          <div className="bg-card border border-accent/20 rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(30,77,58,0.04)] grid grid-cols-1 lg:grid-cols-12 gap-0 items-stretch group">
 
-          {/* Golden compounding line */}
-          <div className="w-full h-16 pt-2 overflow-visible">
-            <CompoundingLine variant="services-header" />
+            {/* Spotlight Creative Image Visual */}
+            {/* UPDATE: Added order-first lg:order-last */}
+            <div className="relative h-64 lg:h-auto lg:col-span-5 bg-primary/10 overflow-hidden order-first lg:order-last">
+              <img
+                src="/images/services/algoTrading.jpeg"
+                alt="Algo Trading Strategies Analytics"
+                className="w-full h-full object-cover"
+              />
+              {/* <div className="absolute inset-0 bg-gradient-to-r lg:bg-gradient-to-l from-transparent via-transparent to-card lg:to-card/90" /> */}
+            </div>
+
+            {/* Spotlight Content */}
+            {/* UPDATE: Added lg:order-first to explicitly snap text left on desktop screens */}
+            <div className="p-8 sm:p-12 lg:col-span-7 flex flex-col justify-center space-y-6 lg:order-first">
+              <div className="flex items-center gap-2 text-accent text-xs font-semibold tracking-widest uppercase">
+                <Cpu className="w-4 h-4 text-accent" />
+                <span>Premium Quantitative Offering</span>
+              </div>
+
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-primary leading-tight">
+                Algo Trading Strategies
+              </h2>
+
+              <p className="font-sans text-charcoal/80 text-base leading-relaxed font-light">
+                Sophisticated quantitative overlays utilizing automated trading systems to optimize entry points and minimize risk drawdowns. Our algorithms run rule-based computational parameters designed to preserve capital while seizing volatile market inefficiencies in real time.
+              </p>
+
+              <div className="pt-2">
+                <button
+                  onClick={handleCtaClick}
+                  className="inline-flex items-center gap-2 text-primary group-hover:text-accent font-sans text-xs font-bold tracking-widest uppercase transition-colors duration-300"
+                >
+                  <span>Explore Quantitative Systems</span>
+                  <ArrowUpRight className="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </button>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
