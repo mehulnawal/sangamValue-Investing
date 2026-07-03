@@ -101,7 +101,7 @@ export default function Footer() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="e.g., Harish Mehta"
+                      placeholder="e.g., Bimal Dharewa"
                       className="bg-primary/20 border border-background/20 rounded px-4 py-3 text-sm text-background placeholder-background/40 focus:outline-none focus:border-accent transition-colors"
                     />
                   </div>
@@ -116,7 +116,7 @@ export default function Footer() {
                       required
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="e.g., +91 98200 12345"
+                      placeholder="e.g., +91 9374707411"
                       className="bg-primary/20 border border-background/20 rounded px-4 py-3 text-sm text-background placeholder-background/40 focus:outline-none focus:border-accent transition-colors"
                     />
                   </div>
@@ -134,7 +134,7 @@ export default function Footer() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="e.g., harish@mehtagroup.com"
+                      placeholder="e.g., sangamvalueinvesting@gmail.com"
                       className="bg-primary/20 border border-background/20 rounded px-4 py-3 text-sm text-background placeholder-background/40 focus:outline-none focus:border-accent transition-colors"
                     />
                   </div>

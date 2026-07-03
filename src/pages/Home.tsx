@@ -59,14 +59,14 @@ export default function Home() {
       {/* 5. Services selection preview */}
       <ServicesPreview />
 
-      {/* 6. Partner logos ribbon */}
-      <Partners />
-
       {/* 7. Leadership panel */}
       {/* <Leadership /> */}
 
       {/* 8. Office Trust gallery */}
       <OfficeGallery />
+
+      {/* 8. Partner logos ribbon */}
+      <Partners />
     </div>
   );
 }
