@@ -54,9 +54,9 @@ export default function ServiceCard({
         </div>
       </div>
 
-      <div className="mx-6 md:mx-8 mb-6 md:mb-8 pt-2 flex items-center text-accent text-xs font-semibold tracking-wider uppercase group-hover:translate-x-1 transition-transform duration-300">
+      {/* <div className="mx-6 md:mx-8 mb-6 md:mb-8 pt-2 flex items-center text-accent text-xs font-semibold tracking-wider uppercase group-hover:translate-x-1 transition-transform duration-300">
         <span aria-hidden="true">&rarr;</span>
-      </div>
+      </div> */}
     </motion.div>
   );
 }

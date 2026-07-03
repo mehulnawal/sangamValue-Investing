@@ -3,8 +3,7 @@ import { motion, useReducedMotion } from 'motion/react';
 const PARTNER = {
   name: 'IIFL Securities',
   logo: '/images/IIFLLogo.png',
-  description:
-    'We proudly collaborate with IIFL Securities, one of India’s leading financial institutions, enabling our clients to access reliable trading infrastructure, seamless execution, and comprehensive investment solutions backed by decades of market expertise.',
+  description: '',
 };
 
 export default function Partners() {
@@ -13,13 +12,13 @@ export default function Partners() {
   return (
     <section
       id="partners"
-      className="py-20 lg:py-28 bg-card border-y border-primary/5"
+      className="py-2 lg:py-2 bg-card border-y border-primary/5"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Heading */}
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -29,7 +28,7 @@ export default function Partners() {
           <p className="text-xs md:text-sm font-semibold tracking-[0.25em] uppercase text-charcoal/50">
             Our Strategic Corporate Alliance
           </p>
-        </motion.div>
+        </motion.div> */}
 
         {/* Partner */}
 
@@ -73,15 +72,7 @@ export default function Partners() {
                 {PARTNER.description}
               </p>
 
-              <div className="mt-8 flex items-center gap-3">
-
-                <div className="w-2.5 h-2.5 rounded-full bg-accent" />
-
-                <span className="text-sm font-medium text-primary">
-                  Delivering trusted investment infrastructure and market access.
-                </span>
-
-              </div>
+              <div className="mt-8 flex items-center gap-3"> </div>
 
             </div>
 

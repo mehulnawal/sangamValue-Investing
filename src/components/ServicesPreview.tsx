@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion, useReducedMotion } from 'motion/react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Cpu } from 'lucide-react';
 import CompoundingLine from './CompoundingLine';
 
 const PREVIEW_SERVICES = [
@@ -81,57 +81,48 @@ export default function ServicesPreview() {
         </div>
 
         {/* Services */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-20"
-        >
-          {PREVIEW_SERVICES.map((service) => (
-            <motion.div
-              key={service.title}
-              variants={itemVariants}
-              className="group bg-card rounded-3xl overflow-hidden border border-primary/5 shadow-sm hover:shadow-2xl transition-all duration-500"
-            >
+        <section className="py-12 md:py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-card border border-accent/20 rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(30,77,58,0.04)] grid grid-cols-1 lg:grid-cols-12 gap-0 items-stretch group">
 
-              {/* Image */}
-
-              <div className="overflow-hidden">
-
+              {/* Spotlight Creative Image Visual - Dom element swapped to load first on mobile */}
+              <div className="relative h-64 lg:h-auto lg:col-span-5 bg-primary/10 overflow-hidden order-first lg:order-last">
                 <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-72 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+                  src="/images/services/algoTrading.jpeg"
+                  alt="Algo Trading Strategies Analytics"
+                  className="w-full h-full object-cover"
                 />
-
               </div>
 
-              {/* Content */}
+              {/* Spotlight Content - Keeps left grid tracking on desktop */}
+              <div className="p-8 sm:p-12 lg:col-span-7 flex flex-col justify-center space-y-6 lg:order-first">
+                <div className="flex items-center gap-2 text-accent text-xs font-semibold tracking-widest uppercase">
+                  <Cpu className="w-4 h-4 text-accent" />
+                  <span>Premium Quantitative Offering</span>
+                </div>
 
-              <div className="p-8 md:p-10">
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-primary leading-tight">
+                  Algo Trading Strategies
+                </h2>
 
-                <h3 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-4">
-                  {service.title}
-                </h3>
-
-                <p className="text-charcoal/80 leading-relaxed mb-8">
-                  {service.description}
+                <p className="font-sans text-charcoal/80 text-base leading-relaxed font-light">
+                  Sophisticated quantitative overlays utilizing automated trading systems to optimize entry points and minimize risk drawdowns. Our algorithms run rule-based computational parameters designed to preserve capital while seizing volatile market inefficiencies in real time.
                 </p>
 
-                <Link
-                  to="/services"
-                  className="inline-flex items-center gap-2 text-accent font-semibold group/link"
-                >
-                  Learn More
-
-                  <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover/link:translate-x-1" />
-                </Link>
-
+                <div className="pt-2">
+                  <button
+                    // onClick={handleCtaClick}
+                    className="inline-flex items-center gap-2 text-primary group-hover:text-accent font-sans text-xs font-bold tracking-widest uppercase transition-colors duration-300"
+                  >
+                    <span>Explore Other services</span>
+                    <ArrowUpRight className="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </button>
+                </div>
               </div>
-            </motion.div>
-          ))}
-        </motion.div>
+
+            </div>
+          </div>
+        </section>
 
         {/* Divider */}
 
