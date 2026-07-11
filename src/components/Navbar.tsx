@@ -49,7 +49,6 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20 md:h-24">
 
           {/* Logo & Brand Name */}
-          {/* Logo & Brand Name */}
           <NavLink
             to="/"
             className="
@@ -57,7 +56,7 @@ export default function Navbar() {
     items-center
     w-full
     min-w-0
-    gap-2
+    gap-1.5 sm:gap-2
     group
     focus-visible:ring-2
     focus-visible:ring-accent
@@ -69,7 +68,7 @@ export default function Navbar() {
               src="/images/logo.png"
               alt="Sangam Value Investing Logo"
               className="
-      w-[42px]
+      w-[50px]
       h-[42px]
       sm:w-[60px]
       sm:h-[60px]
@@ -86,13 +85,14 @@ export default function Navbar() {
             <span
               className="
       font-serif
+      font-bold
       text-primary
       leading-none
       whitespace-nowrap
       flex-1
       min-w-0
-      text-[5.25vw]
-      tracking-[-0.045em]
+      text-[6.4vw]
+      tracking-[-0.055em]
       sm:text-[22px]
       sm:tracking-[-0.03em]
       md:text-[25px]
