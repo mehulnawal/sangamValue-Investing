@@ -56,7 +56,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
             animate="visible"
           >
             <div className="absolute top-1/3 -left-10 right-0 h-48 opacity-45 pointer-events-none -z-10 overflow-visible">
-              <CompoundingLine variant="hero" delay={0.4} />
+              {/* <CompoundingLine variant="hero" delay={0.4} /> */}
             </div>
 
             {/* <motion.div
