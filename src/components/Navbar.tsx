@@ -49,19 +49,25 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20 md:h-24">
 
           {/* Logo & Brand Name */}
+          {/* Logo & Brand Name */}
           <NavLink
             to="/"
-            className="flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none rounded-lg p-1"
+            className="
+    flex items-center gap-4
+    group
+    focus-visible:ring-2
+    focus-visible:ring-accent
+    focus-visible:outline-none
+    rounded-lg
+    flex-shrink-0
+  "
           >
-            {/* Logo Image */}
             <img
               src="/images/logo.png"
               alt="Sangam Value Investing Logo"
               className="
-      w-9 h-9
-      sm:w-10 sm:h-10
-      md:w-11 md:h-11
-      lg:w-12 lg:h-12
+      w-[70px] h-[70px]
+      md:w-[82px] md:h-[82px]
       object-contain
       flex-shrink-0
       transition-transform duration-300
@@ -69,11 +75,22 @@ export default function Navbar() {
     "
             />
 
-            <div className="flex items-center whitespace-nowrap overflow-hidden w-full select-none">
-              <span className="font-serif font-bold text-primary leading-none tracking-tight text-[6vw] xs:text-[6.5vw] sm:text-lg md:text-xl lg:text-2xl block w-full text-center sm:text-left break-words">
-                SANGAM VALUE INVESTING
-              </span>
-            </div>
+            <span
+              className="
+      font-serif
+      font-bold
+      text-primary
+      leading-none
+      tracking-tight
+      whitespace-nowrap
+      text-[22px]
+      md:text-[28px]
+      lg:text-[32px]
+      select-none
+    "
+            >
+              SANGAM VALUE INVESTING
+            </span>
           </NavLink>
 
           {/* Desktop Links */}
