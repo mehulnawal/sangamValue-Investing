@@ -53,10 +53,12 @@ export default function Navbar() {
           <NavLink
             to="/"
             className="
-    flex items-center gap-2 sm:gap-3 md:gap-4
-    group
+    flex
+    items-center
+    w-full
     min-w-0
-    flex-1
+    gap-2
+    group
     focus-visible:ring-2
     focus-visible:ring-accent
     focus-visible:outline-none
@@ -67,12 +69,16 @@ export default function Navbar() {
               src="/images/logo.png"
               alt="Sangam Value Investing Logo"
               className="
-      w-[48px] h-[48px]
-      sm:w-[60px] sm:h-[60px]
-      md:w-[82px] md:h-[82px]
+      w-[42px]
+      h-[42px]
+      sm:w-[60px]
+      sm:h-[60px]
+      md:w-[70px]
+      md:h-[70px]
       object-contain
       flex-shrink-0
-      transition-transform duration-300
+      transition-transform
+      duration-300
       group-hover:scale-105
     "
             />
@@ -80,13 +86,17 @@ export default function Navbar() {
             <span
               className="
       font-serif
-      font-bold
       text-primary
       leading-none
-      tracking-tight
       whitespace-nowrap
+      flex-1
       min-w-0
-      text-[clamp(13px,4.1vw,32px)]
+      text-[5.25vw]
+      tracking-[-0.045em]
+      sm:text-[22px]
+      sm:tracking-[-0.03em]
+      md:text-[25px]
+      lg:text-[28px]
       select-none
     "
             >
