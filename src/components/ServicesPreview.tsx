@@ -55,7 +55,7 @@ export default function ServicesPreview() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-0 text-center">
 
-          <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
+          {/* <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
             <span className="text-xs font-semibold tracking-widest uppercase text-accent font-sans">
               Expertise
             </span>
@@ -70,7 +70,7 @@ export default function ServicesPreview() {
             </p>
 
             <div className="w-16 h-0.5 bg-accent mx-auto mt-4" />
-          </div>
+          </div> */}
 
           {/* <Link
             to="/services"
