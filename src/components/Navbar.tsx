@@ -53,20 +53,22 @@ export default function Navbar() {
           <NavLink
             to="/"
             className="
-    flex items-center gap-4
+    flex items-center gap-2 sm:gap-3 md:gap-4
     group
+    min-w-0
+    flex-1
     focus-visible:ring-2
     focus-visible:ring-accent
     focus-visible:outline-none
     rounded-lg
-    flex-shrink-0
   "
           >
             <img
               src="/images/logo.png"
               alt="Sangam Value Investing Logo"
               className="
-      w-[70px] h-[70px]
+      w-[48px] h-[48px]
+      sm:w-[60px] sm:h-[60px]
       md:w-[82px] md:h-[82px]
       object-contain
       flex-shrink-0
@@ -83,9 +85,8 @@ export default function Navbar() {
       leading-none
       tracking-tight
       whitespace-nowrap
-      text-[22px]
-      md:text-[28px]
-      lg:text-[32px]
+      min-w-0
+      text-[clamp(13px,4.1vw,32px)]
       select-none
     "
             >
