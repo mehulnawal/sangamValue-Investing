@@ -130,9 +130,9 @@ export default function ServicesPreview() {
 
         {/* Divider */}
 
-        <div className="pt-4 overflow-visible">
+        {/* <div className="pt-4 overflow-visible">
           <CompoundingLine variant="divider2" />
-        </div>
+        </div> */}
 
       </div>
     </section>

@@ -36,7 +36,7 @@ export default function OfficeGallery() {
           <p className="font-sans text-charcoal/70 text-sm md:text-base leading-relaxed mt-4 font-light">
             A quiet, premium space designed to protect confidentiality and host meaningful discussions about your family's future.
           </p>
-          <div className="w-16 h-0.5 bg-accent mx-auto mt-4" />
+          {/* <div className="w-16 h-0.5 bg-accent mx-auto mt-4" /> */}
         </div>
 
         {/* 3-Image Strip Grid */}

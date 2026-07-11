@@ -9,10 +9,10 @@ export default function Introduction() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Core Two-Column Intro Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-4 md:mb-4">
+        <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-16 items-center mb-4 md:mb-4">
 
           {/* Left Column: Visual interior */}
-          <motion.div
+          {/* <motion.div
             className="lg:col-span-5 relative"
             initial={{ opacity: 0, x: shouldReduceMotion ? 0 : -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -28,11 +28,10 @@ export default function Introduction() {
                 referrerPolicy="no-referrer"
               />
             </div>
-            {/* Small subtle tag */}
             <div className="absolute -bottom-4 right-6 bg-card border border-primary/5 px-4 py-2 rounded shadow-sm">
               <span className="font-serif text-xs text-primary italic font-semibold">Private Advisory Suite</span>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Right Column: Statement blocks */}
           <div className="lg:col-span-7 space-y-8">
@@ -63,11 +62,6 @@ export default function Introduction() {
             </motion.div>
           </div>
 
-        </div>
-
-        {/* Section Divider: First continuation of the Compounding Line */}
-        <div className="w-full pt-0 overflow-visible">
-          <CompoundingLine variant="divider1" />
         </div>
 
       </div>

@@ -25,7 +25,7 @@ export default function MissionVision() {
   return (
     <section id="mission-vision" className="py-20 md:py-28 bg-card border-y border-primary/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
           <span className="text-xs font-semibold tracking-widest uppercase text-accent font-sans">
@@ -34,7 +34,7 @@ export default function MissionVision() {
           <h2 className="font-serif text-3xl md:text-4.5xl font-bold text-primary mt-2 mb-4">
             Guiding Principles of Sangam Value Investing
           </h2>
-          <div className="w-16 h-0.5 bg-accent mx-auto mt-4" />
+          {/* <div className="w-16 h-0.5 bg-accent mx-auto mt-4" /> */}
         </div>
 
         {/* Mission and Vision Grid */}

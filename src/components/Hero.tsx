@@ -193,7 +193,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
             {/* Image 2 */}
             <div className="relative overflow-hidden rounded-md border border-primary/10 bg-card aspect-[16/10] w-full shadow-sm hover:shadow-md transition-shadow duration-300">
               <img
-                src="/images/heroImg2.jpeg"
+                src="/images/philosophicalSection.jpg"
                 alt="Handshake agreement collaboration overview"
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.01]"
               />
