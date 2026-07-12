@@ -9,7 +9,7 @@ const GALLERY_PHOTOS = [
   {
     src: '/images/trust2.jpg',
     alt: 'Boutique wealth management office suite interior lounge',
-    caption: 'Private Discussion Suite',
+    caption: 'Rajesh kothari ( Alfa Accurate)',
   },
   {
     src: '/images/trust3.jpg',
