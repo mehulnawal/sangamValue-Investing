@@ -148,8 +148,8 @@ export default function Hero({ onCtaClick }: HeroProps) {
           flex
           flex-col
           justify-center
-          py-16
-          md:py-24
+          py-5
+          md:py-10
           overflow-hidden
           bg-background
         "
