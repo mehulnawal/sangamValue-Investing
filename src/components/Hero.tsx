@@ -448,12 +448,12 @@ export default function Hero({ onCtaClick }: HeroProps) {
 
             <motion.div
               className="
-                lg:col-span-5
-                relative
-                flex
-                justify-center
-                lg:justify-end
-              "
+    lg:col-span-5
+    relative
+    flex
+    justify-center
+    lg:justify-end
+  "
               initial={{
                 opacity: 0,
                 scale: shouldReduceMotion ? 1 : 0.95,
@@ -473,135 +473,123 @@ export default function Hero({ onCtaClick }: HeroProps) {
             >
               <div
                 className="
-                  relative
-                  w-full
-                  max-w-[360px]
-                  z-10
-                  group
-                "
+      relative
+      w-full
+      max-w-[360px]
+      z-10
+      group
+    "
               >
-                {/* DECORATIVE BORDER */}
+                {/* CARD + OUTER BORDER AREA */}
 
-                <div
-                  className="
-                    absolute
-                    -inset-4
-                    border
-                    border-accent/25
-                    rounded-md
-                    transform
-                    translate-x-2
-                    translate-y-2
-                    group-hover:translate-x-0
-                    group-hover:translate-y-0
-                    transition-transform
-                    duration-500
-                    -z-10
-                  "
-                />
-
-                {/* MAIN FOUNDER CARD */}
-
-                <div
-                  className="
-                    w-full
-                    overflow-hidden
-                    rounded-md
-                    border
-                    border-primary/10
-                    shadow-[0_15px_40px_rgba(30,77,58,0.08)]
-                    bg-card
-                  "
-                >
-                  {/* FOUNDER PHOTO */}
+                <div className="relative">
+                  {/* DECORATIVE OUTER BORDER */}
 
                   <div
                     className="
-                      relative
-                      w-full
-                      aspect-[3/4]
-                      overflow-hidden
-                    "
+          absolute
+          -inset-4
+          border
+          border-accent/25
+          rounded-md
+          transform
+          translate-x-2
+          translate-y-2
+          group-hover:translate-x-0
+          group-hover:translate-y-0
+          transition-transform
+          duration-500
+          -z-10
+        "
+                  />
+
+                  {/* PHOTO + SIGNATURE CARD */}
+
+                  <div
+                    className="
+          w-full
+          overflow-hidden
+          rounded-md
+          border
+          border-primary/10
+          shadow-[0_15px_40px_rgba(30,77,58,0.08)]
+          bg-background
+        "
                   >
-                    <img
-                      src="/images/ownerPhoto.jpg"
-                      alt="Founder Portrait of Bimal Dharewa"
+                    {/* FOUNDER PHOTO */}
+
+                    <div
                       className="
-                        w-full
-                        h-full
-                        object-cover
-                        grayscale-[15%]
-                        group-hover:grayscale-0
-                        transition-all
-                        duration-700
-                      "
-                      referrerPolicy="no-referrer"
-                    />
-                  </div>
+            relative
+            w-full
+            aspect-[3/4]
+            overflow-hidden
+          "
+                    >
+                      <img
+                        src="/images/ownerPhoto.jpg"
+                        alt="Founder Portrait of Bimal Dharewa"
+                        className="
+              w-full
+              h-full
+              object-cover
+              grayscale-[15%]
+              group-hover:grayscale-0
+              transition-all
+              duration-700
+            "
+                        referrerPolicy="no-referrer"
+                      />
+                    </div>
 
-                  {/* SIGNATURE + DETAILS */}
-
-                  <div
-                    className="
-                      px-5
-                      sm:px-6
-                      py-1
-                      sm:py-1
-                      text-center
-                      border-t
-                      border-primary/10
-                    "
-                  >
                     {/* SIGNATURE */}
 
-                    <img
-                      src="/images/signature1.png"
-                      alt="Bimal Dharewa Signature"
+                    <div
                       className="
-                        block
-                        w-auto
-                        h-12
-                        sm:h-14
-                        md:h-16
-                        max-w-[180px]
-                        mx-auto
-                        object-contain
-                        mb-0
-                      "
-                    />
-
-                    {/* NAME */}
-
-                    <p
-                      className="
-                        font-serif
-                        text-lg
-                        sm:text-xl
-                        font-bold
-                        text-primary
-                        leading-tight
-                      "
+            w-full
+            h-[100px]
+            sm:h-[110px]
+            md:h-[120px]
+            flex
+            items-center
+            justify-center
+            px-5
+          "
                     >
-                      Bimal Dharewa
-                    </p>
-
-                    {/* DESIGNATION */}
-
-                    <p
-                      className="
-                        text-xs
-                        sm:text-sm
-                        text-charcoal/70
-                        tracking-[0.18em]
-                        uppercase
-                        mt-1.5
-                        font-sans
-                      "
-                    >
-                      Founder &amp; Partner
-                    </p>
+                      <img
+                        src="/images/signature1.png"
+                        alt="Bimal Dharewa Signature"
+                        className="
+              block
+              w-auto
+              h-14
+              sm:h-16
+              md:h-[72px]
+              max-w-[220px]
+              object-contain
+              mix-blend-multiply
+            "
+                      />
+                    </div>
                   </div>
                 </div>
+
+                {/* FOUNDER DESIGNATION - OUTER BORDER KE NICHE */}
+
+                <p
+                  className="
+        text-center
+        text-xs
+        sm:text-sm
+        text-charcoal/70
+        tracking-[0.18em]
+        uppercase
+        mt-8
+        font-sans
+      "
+                >
+                  Founder &amp; Partner
+                </p>
               </div>
             </motion.div>
           </div>
