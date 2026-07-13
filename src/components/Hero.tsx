@@ -23,7 +23,9 @@ export default function Hero({ onCtaClick }: HeroProps) {
   const shouldReduceMotion = useReducedMotion();
 
   const containerVariants = {
-    hidden: { opacity: 0 },
+    hidden: {
+      opacity: 0,
+    },
     visible: {
       opacity: 1,
       transition: {
@@ -50,33 +52,31 @@ export default function Hero({ onCtaClick }: HeroProps) {
 
   return (
     <>
-
       {/* ===================================================== */}
       {/* RESPONSIVE BANNER */}
-      {/* MOBILE = SCREENSHOT JAISA, BAS THODA BADA */}
-      {/* DESKTOP = CURRENT FULL HEIGHT SAME */}
       {/* ===================================================== */}
 
       <section
         className="
-    relative
-    z-10
-    w-full
-    mt-20
-    md:mt-24
-    overflow-hidden
-  "
+          relative
+          z-10
+          w-full
+          mt-20
+          md:mt-24
+          overflow-hidden
+        "
       >
         {/* MOBILE */}
+
         <motion.div
           className="
-      relative
-      w-full
-      h-[145px]
-      sm:h-[230px]
-      md:hidden
-      overflow-hidden
-    "
+            relative
+            w-full
+            h-[145px]
+            sm:h-[230px]
+            md:hidden
+            overflow-hidden
+          "
           initial={{
             opacity: 0,
           }}
@@ -92,23 +92,24 @@ export default function Hero({ onCtaClick }: HeroProps) {
             src="/images/hero-section1.png"
             alt="Sangam Value Investing Office"
             className="
-        w-full
-        h-full
-        object-fill
-      "
+              w-full
+              h-full
+              object-fill
+            "
           />
         </motion.div>
 
-        {/* DESKTOP - SAME AS CURRENT */}
+        {/* DESKTOP */}
+
         <motion.div
           className="
-      hidden
-      md:block
-      relative
-      w-full
-      h-[calc(100svh-6rem)]
-      overflow-hidden
-    "
+            hidden
+            md:block
+            relative
+            w-full
+            h-[calc(100svh-6rem)]
+            overflow-hidden
+          "
           initial={{
             opacity: 0,
           }}
@@ -124,20 +125,19 @@ export default function Hero({ onCtaClick }: HeroProps) {
             src="/images/hero-section1.png"
             alt="Sangam Value Investing Office"
             className="
-        absolute
-        inset-0
-        w-full
-        h-full
-        object-cover
-        object-center
-      "
+              absolute
+              inset-0
+              w-full
+              h-full
+              object-cover
+              object-center
+            "
           />
         </motion.div>
       </section>
 
       {/* ===================================================== */}
       {/* CRAFTING HERO SECTION */}
-      {/* YE NEXT VIEWPORT / SCROLL KE BAAD AAYEGA */}
       {/* ===================================================== */}
 
       <section
@@ -154,7 +154,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
           bg-background
         "
       >
-        {/* Background Grid Pattern */}
+        {/* BACKGROUND GRID */}
 
         <div
           className="
@@ -181,7 +181,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
             gap-16
           "
         >
-          {/* Main Hero Grid */}
+          {/* MAIN HERO GRID */}
 
           <div
             className="
@@ -193,7 +193,9 @@ export default function Hero({ onCtaClick }: HeroProps) {
               items-center
             "
           >
-            {/* LEFT COLUMN */}
+            {/* ================================================= */}
+            {/* LEFT CONTENT */}
+            {/* ================================================= */}
 
             <motion.div
               className="
@@ -213,6 +215,8 @@ export default function Hero({ onCtaClick }: HeroProps) {
                 amount: 0.2,
               }}
             >
+              {/* TITLE */}
+
               <motion.h1
                 variants={itemVariants}
                 className="
@@ -230,10 +234,18 @@ export default function Hero({ onCtaClick }: HeroProps) {
               >
                 Crafting Your <br />
 
-                <span className="text-accent italic font-normal">
+                <span
+                  className="
+                    text-accent
+                    italic
+                    font-normal
+                  "
+                >
                   Financial Legacy
                 </span>
               </motion.h1>
+
+              {/* DESCRIPTION */}
 
               <motion.p
                 variants={itemVariants}
@@ -254,6 +266,8 @@ export default function Hero({ onCtaClick }: HeroProps) {
                 legacy that lasts. Private, personalized, and value-driven
                 advisory for discerning individuals.
               </motion.p>
+
+              {/* BUTTONS */}
 
               <motion.div
                 variants={itemVariants}
@@ -299,7 +313,16 @@ export default function Hero({ onCtaClick }: HeroProps) {
                 >
                   <span>Book a Consultation</span>
 
-                  <ArrowUpRight className="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  <ArrowUpRight
+                    className="
+                      w-4
+                      h-4
+                      transform
+                      group-hover:translate-x-0.5
+                      group-hover:-translate-y-0.5
+                      transition-transform
+                    "
+                  />
                 </button>
 
                 <a
@@ -356,7 +379,11 @@ export default function Hero({ onCtaClick }: HeroProps) {
                 {stats.map(({ icon: Icon, value, label }, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-3"
+                    className="
+                      flex
+                      items-center
+                      gap-3
+                    "
                   >
                     <div
                       className="
@@ -373,17 +400,40 @@ export default function Hero({ onCtaClick }: HeroProps) {
                       "
                     >
                       <Icon
-                        className="w-4 h-4 text-accent"
+                        className="
+                          w-4
+                          h-4
+                          text-accent
+                        "
                         strokeWidth={1.75}
                       />
                     </div>
 
                     <div>
-                      <p className="font-serif text-xl sm:text-2xl font-bold text-primary leading-none">
+                      <p
+                        className="
+                          font-serif
+                          text-xl
+                          sm:text-2xl
+                          font-bold
+                          text-primary
+                          leading-none
+                        "
+                      >
                         {value}
                       </p>
 
-                      <p className="text-[11px] sm:text-xs text-charcoal/60 uppercase tracking-wider font-sans mt-1">
+                      <p
+                        className="
+                          text-[11px]
+                          sm:text-xs
+                          text-charcoal/60
+                          uppercase
+                          tracking-wider
+                          font-sans
+                          mt-1
+                        "
+                      >
                         {label}
                       </p>
                     </div>
@@ -393,7 +443,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
             </motion.div>
 
             {/* ================================================= */}
-            {/* FOUNDER IMAGE */}
+            {/* FOUNDER CARD */}
             {/* ================================================= */}
 
             <motion.div
@@ -421,50 +471,136 @@ export default function Hero({ onCtaClick }: HeroProps) {
                 ease: 'easeOut',
               }}
             >
-              <div className="relative w-full max-w-[360px] aspect-[3/4] z-10 group">
-                <div className="absolute -inset-4 border border-accent/25 rounded-md transform translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500 -z-10" />
-
-                <div className="w-full h-full overflow-hidden rounded-md border border-primary/10 shadow-[0_15px_40px_rgba(30,77,58,0.08)] bg-card">
-                  <img
-                    src="/images/ownerPhoto.jpg"
-                    alt="Founder Portrait of Bimal Dharewa"
-                    className="
-                      w-full
-                      h-full
-                      object-cover
-                      grayscale-[15%]
-                      group-hover:grayscale-0
-                      transition-all
-                      duration-700
-                    "
-                    referrerPolicy="no-referrer"
-                  />
-                </div>
+              <div
+                className="
+                  relative
+                  w-full
+                  max-w-[360px]
+                  z-10
+                  group
+                "
+              >
+                {/* DECORATIVE BORDER */}
 
                 <div
                   className="
                     absolute
-                    -bottom-18
-                    left-2
-                    sm:-left-6
-                    bg-card
+                    -inset-4
+                    border
+                    border-accent/25
+                    rounded-md
+                    transform
+                    translate-x-2
+                    translate-y-2
+                    group-hover:translate-x-0
+                    group-hover:translate-y-0
+                    transition-transform
+                    duration-500
+                    -z-10
+                  "
+                />
+
+                {/* MAIN FOUNDER CARD */}
+
+                <div
+                  className="
+                    w-full
+                    overflow-hidden
+                    rounded-md
                     border
                     border-primary/10
-                    shadow-lg
-                    px-6
-                    py-4
-                    rounded-md
-                    text-left
-                    max-w-[240px]
+                    shadow-[0_15px_40px_rgba(30,77,58,0.08)]
+                    bg-card
                   "
                 >
-                  <p className="font-serif text-base font-bold text-primary">
-                    Bimal Dharewa
-                  </p>
+                  {/* FOUNDER PHOTO */}
 
-                  <p className="text-xs text-charcoal/70 tracking-widest uppercase mt-0.5 font-sans">
-                    Founder &amp; Partner
-                  </p>
+                  <div
+                    className="
+                      relative
+                      w-full
+                      aspect-[3/4]
+                      overflow-hidden
+                    "
+                  >
+                    <img
+                      src="/images/ownerPhoto.jpg"
+                      alt="Founder Portrait of Bimal Dharewa"
+                      className="
+                        w-full
+                        h-full
+                        object-cover
+                        grayscale-[15%]
+                        group-hover:grayscale-0
+                        transition-all
+                        duration-700
+                      "
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
+
+                  {/* SIGNATURE + DETAILS */}
+
+                  <div
+                    className="
+                      px-5
+                      sm:px-6
+                      py-1
+                      sm:py-1
+                      text-center
+                      border-t
+                      border-primary/10
+                    "
+                  >
+                    {/* SIGNATURE */}
+
+                    <img
+                      src="/images/signature1.png"
+                      alt="Bimal Dharewa Signature"
+                      className="
+                        block
+                        w-auto
+                        h-12
+                        sm:h-14
+                        md:h-16
+                        max-w-[180px]
+                        mx-auto
+                        object-contain
+                        mb-0
+                      "
+                    />
+
+                    {/* NAME */}
+
+                    <p
+                      className="
+                        font-serif
+                        text-lg
+                        sm:text-xl
+                        font-bold
+                        text-primary
+                        leading-tight
+                      "
+                    >
+                      Bimal Dharewa
+                    </p>
+
+                    {/* DESIGNATION */}
+
+                    <p
+                      className="
+                        text-xs
+                        sm:text-sm
+                        text-charcoal/70
+                        tracking-[0.18em]
+                        uppercase
+                        mt-1.5
+                        font-sans
+                      "
+                    >
+                      Founder &amp; Partner
+                    </p>
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -474,9 +610,23 @@ export default function Hero({ onCtaClick }: HeroProps) {
           {/* MILESTONES */}
           {/* ================================================= */}
 
-          <div className="w-full flex flex-col items-center gap-6 mt-8">
+          <div
+            className="
+              w-full
+              flex
+              flex-col
+              items-center
+              gap-6
+              mt-8
+            "
+          >
             <motion.div
-              className="text-center max-w-2xl mx-auto px-4"
+              className="
+                text-center
+                max-w-2xl
+                mx-auto
+                px-4
+              "
               initial={{
                 opacity: 0,
                 y: shouldReduceMotion ? 0 : 15,
@@ -492,11 +642,28 @@ export default function Hero({ onCtaClick }: HeroProps) {
                 duration: 0.8,
               }}
             >
-              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-primary mb-3">
+              <h2
+                className="
+                  font-serif
+                  text-2xl
+                  sm:text-3xl
+                  font-bold
+                  text-primary
+                  mb-3
+                "
+              >
                 Celebrating Milestones Together
               </h2>
 
-              <p className="font-sans text-sm sm:text-base text-charcoal/70 font-light">
+              <p
+                className="
+                  font-sans
+                  text-sm
+                  sm:text-base
+                  text-charcoal/70
+                  font-light
+                "
+              >
                 Honored to host our esteemed guest{' '}
                 <strong>Kailash Hakim Sir</strong> at the Sangam Value Investing
                 office inauguration. Building a legacy of trust, collaboration,
@@ -504,8 +671,16 @@ export default function Hero({ onCtaClick }: HeroProps) {
               </p>
             </motion.div>
 
+            {/* MILESTONE IMAGES */}
+
             <motion.div
-              className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full"
+              className="
+                grid
+                grid-cols-1
+                sm:grid-cols-2
+                gap-6
+                w-full
+              "
               initial={{
                 opacity: 0,
                 y: shouldReduceMotion ? 0 : 20,
@@ -521,19 +696,63 @@ export default function Hero({ onCtaClick }: HeroProps) {
                 duration: 0.8,
               }}
             >
-              <div className="relative overflow-hidden rounded-md border border-primary/10 bg-card aspect-[16/10] w-full shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div
+                className="
+                  relative
+                  overflow-hidden
+                  rounded-md
+                  border
+                  border-primary/10
+                  bg-card
+                  aspect-[16/10]
+                  w-full
+                  shadow-sm
+                  hover:shadow-md
+                  transition-shadow
+                  duration-300
+                "
+              >
                 <img
                   src="/images/heroImg2.jpg"
                   alt="Bimal Dharewa receiving a bouquet partner greeting"
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.01]"
+                  className="
+                    w-full
+                    h-full
+                    object-cover
+                    transition-transform
+                    duration-500
+                    hover:scale-[1.01]
+                  "
                 />
               </div>
 
-              <div className="relative overflow-hidden rounded-md border border-primary/10 bg-card aspect-[16/10] w-full shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div
+                className="
+                  relative
+                  overflow-hidden
+                  rounded-md
+                  border
+                  border-primary/10
+                  bg-card
+                  aspect-[16/10]
+                  w-full
+                  shadow-sm
+                  hover:shadow-md
+                  transition-shadow
+                  duration-300
+                "
+              >
                 <img
                   src="/images/philosophicalSection.jpg"
                   alt="Handshake agreement collaboration overview"
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.01]"
+                  className="
+                    w-full
+                    h-full
+                    object-cover
+                    transition-transform
+                    duration-500
+                    hover:scale-[1.01]
+                  "
                 />
               </div>
             </motion.div>
