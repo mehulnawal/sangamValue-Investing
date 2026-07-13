@@ -53,8 +53,8 @@ export default function Hero({ onCtaClick }: HeroProps) {
 
       {/* ===================================================== */}
       {/* RESPONSIVE BANNER */}
-      {/* MOBILE = FULL IMAGE, NO CROP */}
-      {/* DESKTOP = FULL VIEWPORT HEIGHT */}
+      {/* MOBILE = SCREENSHOT JAISA, BAS THODA BADA */}
+      {/* DESKTOP = CURRENT FULL HEIGHT SAME */}
       {/* ===================================================== */}
 
       <section
@@ -65,18 +65,17 @@ export default function Hero({ onCtaClick }: HeroProps) {
     mt-20
     md:mt-24
     overflow-hidden
-    bg-background
   "
       >
-        {/* MOBILE / TABLET */}
-        <motion.img
-          src="/images/hero-section1.png"
-          alt="Sangam Value Investing Office"
+        {/* MOBILE */}
+        <motion.div
           className="
-      block
-      md:hidden
+      relative
       w-full
-      h-auto
+      h-[145px]
+      sm:h-[230px]
+      md:hidden
+      overflow-hidden
     "
           initial={{
             opacity: 0,
@@ -88,17 +87,26 @@ export default function Hero({ onCtaClick }: HeroProps) {
             duration: 1,
             ease: 'easeOut',
           }}
-        />
+        >
+          <img
+            src="/images/hero-section1.png"
+            alt="Sangam Value Investing Office"
+            className="
+        w-full
+        h-full
+        object-fill
+      "
+          />
+        </motion.div>
 
-        {/* DESKTOP */}
+        {/* DESKTOP - SAME AS CURRENT */}
         <motion.div
           className="
       hidden
       md:block
       relative
       w-full
-      h-[calc(100vh-6rem)]
-      min-h-[600px]
+      h-[calc(100svh-6rem)]
       overflow-hidden
     "
           initial={{
