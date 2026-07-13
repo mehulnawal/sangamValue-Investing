@@ -179,16 +179,56 @@ function DartboardIcon({ className = "w-9 h-9", ...props }) {
       <circle cx="12" cy="12" r="2" fill="currentColor" />
 
       {/* Dart 1 - top right, landed near center */}
-      <line x1="19" y1="3" x2="13.5" y2="10.5" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />
-      <path d="M18 2.5L20.5 2L20 4.5L18 2.5Z" fill="currentColor" />
+      {/* Dart 1 - RED */}
+      <line
+        x1="19"
+        y1="3"
+        x2="13.5"
+        y2="10.5"
+        stroke="#DC2626"
+        strokeWidth="1.75"
+        strokeLinecap="round"
+      />
+      <path
+        d="M18 2.5L20.5 2L20 4.5L18 2.5Z"
+        fill="#DC2626"
+      />
 
-      {/* Dart 2 - top left, landed on middle ring */}
-      <line x1="4" y1="2" x2="9.5" y2="8.5" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />
-      <path d="M4.7 1.3L2.2 1.5L3 3.8L4.7 1.3Z" fill="currentColor" />
+      {/* Dart 2 - RED */}
+      <line
+        x1="4"
+        y1="2"
+        x2="9.5"
+        y2="8.5"
+        stroke="#DC2626"
+        strokeWidth="1.75"
+        strokeLinecap="round"
+      />
+      <path
+        d="M4.7 1.3L2.2 1.5L3 3.8L4.7 1.3Z"
+        fill="#DC2626"
+      />
 
-      {/* Dart 3 - bottom right, landed on outer ring */}
-      <line x1="21" y1="15" x2="15.5" y2="14" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />
-      <path d="M21.7 14.3L23.5 15.8L21.2 16.7L21.7 14.3Z" fill="currentColor" />
+      {/* Dart 3 - RED */}
+      <line
+        x1="21"
+        y1="15"
+        x2="15.5"
+        y2="14"
+        stroke="#DC2626"
+        strokeWidth="1.75"
+        strokeLinecap="round"
+      />
+      <path
+        d="M21.7 14.3L23.5 15.8L21.2 16.7L21.7 14.3Z"
+        fill="#DC2626"
+      />
+
+      {/* <line x1="4" y1="2" x2="9.5" y2="8.5" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />
+      <path d="M4.7 1.3L2.2 1.5L3 3.8L4.7 1.3Z" fill="currentColor" /> */}
+
+      {/* <line x1="21" y1="15" x2="15.5" y2="14" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />
+      <path d="M21.7 14.3L23.5 15.8L21.2 16.7L21.7 14.3Z" fill="currentColor" /> */}
     </svg>
   );
 }
