@@ -546,31 +546,33 @@ export default function Hero({ onCtaClick }: HeroProps) {
 
                     <div
                       className="
-            w-full
-            h-[100px]
-            sm:h-[110px]
-            md:h-[120px]
-            flex
-            items-center
-            justify-center
-            px-5
-          "
+    w-full
+    h-[100px]
+    sm:h-[110px]
+    md:h-[120px]
+    flex
+    items-center
+    justify-center
+    px-5
+  "
+                      style={{ backgroundColor: '#f5f6f7' }}
                     >
                       <img
                         src="/images/signature1.png"
                         alt="Bimal Dharewa Signature"
                         className="
-              block
-              w-auto
-              h-14
-              sm:h-16
-              md:h-[72px]
-              max-w-[220px]
-              object-contain
-              mix-blend-multiply
-            "
+      block
+      w-auto
+      h-14
+      sm:h-16
+      md:h-[72px]
+      max-w-[220px]
+      object-contain
+    "
+                        style={{ filter: 'contrast(1.35)' }}
                       />
                     </div>
+
                   </div>
                 </div>
 
@@ -579,13 +581,13 @@ export default function Hero({ onCtaClick }: HeroProps) {
                 <p
                   className="
         text-center
-        text-xs
-        sm:text-sm
-        text-charcoal/70
+        text-sm
+        sm:text-lg
         tracking-[0.18em]
         uppercase
         mt-8
         font-sans
+        font-bold
       "
                 >
                   Founder &amp; Partner
