@@ -444,7 +444,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
                 <div
                   className="
                     absolute
-                    bottom-6
+                    -bottom-18
                     left-2
                     sm:-left-6
                     bg-card
